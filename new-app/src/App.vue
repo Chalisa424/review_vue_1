@@ -26,9 +26,15 @@
       <div>Description</div>
       <textarea name="description"></textarea>
     </div>
+    <button @click="submitForm()">Submit</button>
   </div>
 </template>
 <script setup>
 const genderList = ["ผู้ชาย", "ผู้หญิง", "ไม่ระบุเพศ"];
 const interestList = ["กีฬา", "ดูหนัง", "ฟังเพลง", "ไปเที่ยว"];
+
+const submitForm = () =>{
+  console.log('submit')
+}
+
 </script>
